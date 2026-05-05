@@ -1,0 +1,9 @@
+{
+  "name": "ARA-Techniek",
+  "short_name": "ARA-Techniek",
+  "description": "Constructie & Elektra Dienstverlening",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2D2EAA"
+}

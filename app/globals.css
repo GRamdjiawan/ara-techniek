@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+:root {
+  --purple: #2D2EAA;
+  --purple-dim: #1c1d80;
+  --purple-bg: #f0f0fb;
+  --ink: #0f0f14;
+  --gray: #6b7280;
+  --muted: #9ca3af;
+  --surface: #f7f7f9;
+  --white: #ffffff;
+  --border: #e5e5ea;
+  --navy: #0d1b2e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-space-grotesk), sans-serif;
+  color: var(--gray);
+  background: var(--white);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--ink);
+  line-height: 1.15;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+*:focus-visible {
+  outline: 3px solid var(--purple);
+  outline-offset: 2px;
+}
+
+@keyframes scrollBar {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(250%); }
+}
+
+/* Project bento grid — explicit row heights only on desktop to keep tiles even */
+@media (min-width: 1024px) {
+  .project-bento {
+    grid-template-rows: clamp(180px, 22vw, 300px) clamp(180px, 22vw, 300px);
+  }
+}
