@@ -51,9 +51,9 @@ export function Services() {
               key={service.num}
               className="service-card bg-white/[0.07] hover:bg-white/[0.13] transition-colors px-9 py-11 cursor-default"
             >
-              <div className="text-white/30 text-xs font-bold tracking-widest uppercase mb-6">
+              {/* <div className="text-white/30 text-xs font-bold tracking-widest uppercase mb-6">
                 {service.num}
-              </div>
+              </div> */}
               <h3 className="text-white text-xl font-bold mb-4">{service.title}</h3>
               <p className="text-white/60 text-sm leading-relaxed">{service.body}</p>
             </div>
